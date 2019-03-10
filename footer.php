@@ -2,7 +2,8 @@
 
 <nav class="site-nav">
   <?php
-$args = array('theme_location' => 'footer');
+$args = array(
+  'theme_location' => 'footer');
 
 ?>
 

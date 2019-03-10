@@ -20,7 +20,8 @@
 
 <?php
 
-$args = array('theme_location' => 'primary');
+$args = array(
+  'theme_location' => 'primary');
 
 ?>
 
