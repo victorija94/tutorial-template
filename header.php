@@ -16,8 +16,7 @@
   <h1><a href="<?php echo home_url(); ?>"><?php bloginfo('name'); ?></a></h1>
   <h5><?php bloginfo('description'); ?> <?php if (is_page(14)) { ?>
   - Thank you for viewing our work
-
-  <?php }?></h5>
+<?php }?></h5>
 
   
 
