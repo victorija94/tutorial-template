@@ -14,9 +14,7 @@
   <!--site-header-->
   <header class="site-header">
   <h1><a href="<?php echo home_url(); ?>"><?php bloginfo('name'); ?></a></h1>
-  <h5><?php bloginfo('description'); ?> <?php if (is_page(2)) { ?>
-  - Thank you for viewing our work
-<?php }?></h5>
+  
 
   
 
