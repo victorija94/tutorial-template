@@ -14,7 +14,7 @@ if(have_posts()) :
      <div class="tittle-column">
      <h2><?php the_tittle(); ?></h2>
 
-     </div><!-- /title-column -->
+     </div><!-- title-column -->
 
      <!-- text-column -->
      <div class="text-column">
