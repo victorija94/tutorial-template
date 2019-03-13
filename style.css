@@ -66,10 +66,9 @@ padding: 0;
     float: left;
 }
 
+
 /* Site Header Menu */
-.site-header nav ul li {
-    margin: 5px;
-}
+
 .site-header nav ul li a:link,
 .site-header nav ul li a:visited {
     display: block;
