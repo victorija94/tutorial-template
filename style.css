@@ -133,3 +133,10 @@ div.info-box h4 {
 div.info-box p {
     font-size: 85%;
 }
+
+/* Children Links */
+.children-links {
+    margin-bottom: 20px;
+    font-size: 80%;
+    
+}
