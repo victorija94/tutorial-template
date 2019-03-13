@@ -138,5 +138,9 @@ div.info-box p {
 .children-links {
     margin-bottom: 20px;
     font-size: 100%;
+}
+
+.children-links li {
+margin-right: 20px;
 
 }
