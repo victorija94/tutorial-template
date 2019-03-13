@@ -11,7 +11,7 @@ if(have_posts()) :
 
     $args = array(
         'child_of' => get_top_ancestor_id(),
-        'tittle_li' => ''
+        'title_li' => ''
     );
 
     ?>
