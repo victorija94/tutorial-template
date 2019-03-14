@@ -170,3 +170,11 @@ margin-right: 20px;
 .children-links .parent-link a:visited {
     color: #333;
 }
+
+.children-links .current_page_item a:link,
+.children-links .current_page_item a:visited {
+
+    border-bottom: 1px solid #DDD;
+    color: #333;
+    cursor: default;
+}
