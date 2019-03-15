@@ -7,6 +7,9 @@ if(have_posts()) :
 
     <article class="post">
        <h2><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
+
+<p class="post-info"><?php the_time('m/d/y');?></p>
+
        <?php the_content(); ?>
     </article>
     <?php endwhile;
