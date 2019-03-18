@@ -17,7 +17,20 @@ $categories = get_the_category();
 $separator = ", ";
 $output = '';
 
+if ($categories) {
+
+foreach ($categories as $category) {
+
+$output .=
+
+}
+
+echo $output;
+
+}
+
 ?>
+
  </p>
 
        <?php the_content(); ?>
