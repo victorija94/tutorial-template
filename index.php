@@ -8,7 +8,7 @@ if(have_posts()) :
     <article class="post">
        <h2><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
 
-<p class="post-info"><?php the_time('F jS, Y g:i a'); ?> | <?php the_author() ?></p>
+<p class="post-info"><?php the_time('F jS, Y g:i a'); ?> | by <?php the_author() ?></p>
 
        <?php the_content(); ?>
     </article>
