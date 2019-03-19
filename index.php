@@ -21,7 +21,7 @@ if ($categories) {
 
 foreach ($categories as $category) {
 
-$output .= '<a href="#">' . <category->cat_name '</a>'  . $separator;
+$output .= '<a href="#">' . <category->cat_name . '</a>'  . $separator;
 
 }
 
