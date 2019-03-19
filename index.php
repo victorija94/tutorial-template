@@ -21,7 +21,7 @@ if ($categories) {
 
 foreach ($categories as $category) {
 
-$output .=
+$output .= $category->cat_name . $separator;
 
 }
 
