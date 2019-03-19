@@ -25,7 +25,7 @@ $output .= $category->cat_name . $separator;
 
 }
 
-echo $output;
+echo trim($output, $separator);
 
 }
 
