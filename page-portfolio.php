@@ -7,7 +7,7 @@ if(have_posts()) :
 
     <article class="post page ">
 
-     <! -- column-container -->
+     <!-- column-container -->
      <div class="column-container clearfix">
 
      <!-- title-column -->
