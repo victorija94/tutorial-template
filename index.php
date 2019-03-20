@@ -21,7 +21,7 @@ if ($categories) {
 
 foreach ($categories as $category) {
 
-$output .= '<a href="' . get_category_link($category->term-id) . '">' . 
+$output .= '<a href="' . get_category_link($category->term_gid) . '">' . 
 $category->cat_name . '</a>'  . $separator;
 
 }
