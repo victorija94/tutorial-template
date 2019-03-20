@@ -10,8 +10,6 @@ if(have_posts()) :
     <?php
 
     if( has_children() OR $_post->post_parent > 0 ){ ?>
-    
-    ?>
 
     <nav class="site-nav children-links clearfix">
 
