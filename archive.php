@@ -21,7 +21,7 @@ if ( is_category() ) {
 } elseif (is_month() ) {
     echo 'Monthly Archives: ' . get_the_date('F Y');
 } elseif ( is_year() ) {
-    echo 'Year';
+    echo 'Yearly Archives: ' . get_the_date('Y');;
 } else {
     echo 'Archives:';
 }
@@ -61,7 +61,7 @@ echo trim($output, $separator);
 
  </p>
 
-       <?php the_content(); ?>
+       <?php the_excerpt(); ?>
     </article>
     <?php endwhile;
 
