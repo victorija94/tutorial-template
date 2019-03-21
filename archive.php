@@ -8,8 +8,8 @@ if(have_posts()) :
 
 <h2><?php 
 
-if ( is_category()) {
-    echo 'This is a category';
+if ( is_category() ) {
+    single_cat_title();
 } elseif (is_tag() ) {
     echo 'Tag';
 } elseif (is_author() ) {
