@@ -6,7 +6,23 @@ if(have_posts()) :
 
 ?>
 
-<h2>Sample text </h2>
+<h2><?php 
+
+if ( is_category()) {
+    echo 'This is a category';
+} elseif (is_tag() ) {
+    echo 'Tag';
+} elseif (is_author() ) {
+    echo 'Author';
+} elseif ( is_day() ) {
+    echo 'Day archive';
+} elseif (is_month() ) {
+    echo 'Month';
+} elseif ( is_year() ) {
+    echo 'Year';
+}
+
+ ?></h2>
 
 <?php
 
