@@ -11,7 +11,7 @@ if(have_posts()) :
 if ( is_category() ) {
     single_cat_title();
 } elseif (is_tag() ) {
-    echo 'Tag';
+    singe_tag_title();
 } elseif (is_author() ) {
     echo 'Author';
 } elseif ( is_day() ) {
