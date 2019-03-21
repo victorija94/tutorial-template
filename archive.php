@@ -17,9 +17,9 @@ if ( is_category() ) {
     echo 'Author Archives: ' . get_the_author();
     rewind_posts();
 } elseif ( is_day() ) {
-    echo 'Day archive';
+    echo 'Daily Archives: ' . get_the_date();
 } elseif (is_month() ) {
-    echo 'Month';
+    echo 'Monthly Archives: ' . get_the_date('F Y');
 } elseif ( is_year() ) {
     echo 'Year';
 } else {
