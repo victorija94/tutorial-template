@@ -13,7 +13,9 @@ if ( is_category() ) {
 } elseif (is_tag() ) {
     singe_tag_title();
 } elseif (is_author() ) {
-    echo 'Author';
+    the_post();
+    echo 'Author Archives: ' . get_the_author();
+    rewind_posts();
 } elseif ( is_day() ) {
     echo 'Day archive';
 } elseif (is_month() ) {
