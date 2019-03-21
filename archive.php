@@ -20,6 +20,8 @@ if ( is_category()) {
     echo 'Month';
 } elseif ( is_year() ) {
     echo 'Year';
+} else {
+    echo 'Archives:';
 }
 
  ?></h2>
