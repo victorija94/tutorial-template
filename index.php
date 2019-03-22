@@ -34,7 +34,9 @@ echo trim($output, $separator);
 
  </p>
 
-       <?php the_excerpt(); ?>
+     <p>
+       <?php echo get_the_excerpt(); ?>
+       </p>
     </article>
 
     <?php endwhile;
