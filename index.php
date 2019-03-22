@@ -34,7 +34,7 @@ echo trim($output, $separator);
 
  </p>
 
-       <?php the_content('Continue reading &raquo;'); ?>
+       <?php the_excerpt(); ?>
     </article>
 
     <?php endwhile;
