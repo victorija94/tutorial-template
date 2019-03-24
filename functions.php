@@ -42,4 +42,10 @@ function custom_excerpt_length() {
 add_filter('excerpt_length' , 'custom_excerpt_length');
 
 
+// Add featured image support
+function learningWordPress_setup() {
+    add_theme_support('post_thumbnails');
 
+}
+
+add_action('after_setup_theme' , 'learningWordPress_setup');
