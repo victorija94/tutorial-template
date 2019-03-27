@@ -5,13 +5,12 @@ get_header();
 if(have_posts()) :
     while (have_posts()) : the_post(); ?>
 
-    <article class="post">
+    <article class="post has-thumbnail">
 
     <!-- post-thumbnail --> 
     <div class="post-thumbnail">
        <?php the_post_thumbnail('small-thumbnail'); ?>
-
-    </div><!-- /post-thumbnail --> 
+     </div><!-- /post-thumbnail --> 
    
 
 
