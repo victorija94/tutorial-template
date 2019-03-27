@@ -5,7 +5,7 @@ get_header();
 if(have_posts()) :
     while (have_posts()) : the_post(); ?>
 
-    <article class="post has-thumbnail">
+    <article class="post <?php if ( has_post_thumbnail() ) { ?>has-thumbnail <?php } ?>">
 
     <!-- post-thumbnail --> 
     <div class="post-thumbnail">
