@@ -34,6 +34,8 @@ echo trim($output, $separator);
 
  </p>
 
+ <?php the_post_thumbnail(); ?>
+
  <?php if ($post->post_excerpt) { ?>
 
 <p>
