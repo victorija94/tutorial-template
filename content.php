@@ -35,6 +35,15 @@
 
             </p>
 
+            <?php if ( is_search() )  { ?>
+                <p>
+                <?php echo get_the_excerpt(); ?>
+                <a href="<?php the_permalink(); ?>">Read more&raquo;</a>
+            </p>
+          <?php  } else {
+
+            } ?>
+
 
             <?php if ($post->post_excerpt) { ?>
 
