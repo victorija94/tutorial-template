@@ -41,11 +41,7 @@
                 <a href="<?php the_permalink(); ?>">Read more&raquo;</a>
             </p>
           <?php  } else {
-
-            } ?>
-
-
-            <?php if ($post->post_excerpt) { ?>
+           if ($post->post_excerpt) { ?>
 
                 <p>
                     <?php echo get_the_excerpt(); ?>
@@ -56,7 +52,7 @@
 
                 the_content();
 
+            }
+
             } ?>
 
-
-        </article>
