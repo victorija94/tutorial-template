@@ -232,4 +232,9 @@ div.hd-search #searchsubmit {
     color: #FFF;
     padding: 5px 14px;
     border: none;
+    vertical-align: top;
+}
+
+div.hd-search #S {
+    vertical-align: top;
 }
