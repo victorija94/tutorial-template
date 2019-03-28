@@ -213,4 +213,11 @@ img {
     position: absolute;
     top: 0;
     left: 0;
+
+}
+
+
+/* Search */
+div.hd-search {
+    float: right;
 }
