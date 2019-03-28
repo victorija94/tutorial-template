@@ -221,3 +221,8 @@ img {
 div.hd-search {
     float: right;
 }
+
+div.hd-search label {
+    position: absolute;
+    left: -9999px;
+}
