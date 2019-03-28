@@ -9,7 +9,7 @@ if (have_posts()) :
 
             <!-- post-thumbnail -->
             <div class="post-thumbnail">
-                <a href="<?php the_permalink(); ?>"<?php the_post_thumbnail('small-thumbnail'); ?></a>
+                <a href="<?php the_permalink(); ?>"><?php the_post_thumbnail('small-thumbnail'); ?></a>
             </div><!-- /post-thumbnail -->
 
 
