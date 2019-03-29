@@ -30,13 +30,27 @@ div.container {
     padding-right: 20px;
 }
 
+/* Content Area */
 article.post {
-    border-bottom: 2px dotted #bbbbbb;
+    border-bottom: 2px dotted #DDD;
+    margin-bottom: 20px;
 }
 
 article.post:last-of-type {
     border-bottom: none;
 }
+
+
+ /* Aside Styles */
+ article.post-aside {
+font-size: 125%;
+background-color: #FFF5CB;
+padding: 20px;
+border-radius: 5px;
+box-shadow: 3px 3px 3px rgba,(0, 0, 0, .1);
+ }
+
+
 
 /*Header */
 .site-header {
