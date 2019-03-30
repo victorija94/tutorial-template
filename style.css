@@ -75,6 +75,10 @@ article.post-gallery {
     padding: 20px;
 }
 
+article.post-gallery img {
+    border: none!important;
+}
+
 article.post-gallery h2 {
     text-align: center;
 }
