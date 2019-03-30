@@ -68,6 +68,18 @@ article.post-link a {
     padding: 20px;
 }
 
+/* Post Format Gallery Styles */
+article.post-gallery {
+    background-color: #222;
+    color: #FFF;
+    padding: 20px;
+}
+
+article.post-gallery h2 {
+    text-align: center;
+}
+
+
 /*Header */
 .site-header {
 border-bottom: 2px solid #999;
