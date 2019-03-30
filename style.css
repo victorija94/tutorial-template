@@ -42,7 +42,8 @@ article.post:last-of-type {
 
 
  /* Aside Styles */
- article.post-aside {
+ article.post-aside,
+ article.post-link {
 font-size: 125%;
 background-color: #FFF5CB;
 padding: 20px;
@@ -56,7 +57,16 @@ box-shadow: 3px 3px 3px rgba,(0, 0, 0, .1);
      color: #777;
  }
 
+/* Link Post Format Styles */
+article.post-link {
+    padding: 0;
+    background-color: #E0EBFF;
+}
 
+article.post-link a {
+    display: block;
+    padding: 20px;
+}
 
 /*Header */
 .site-header {
