@@ -1,4 +1,4 @@
 <article class="post post-link" >
-<a href="<?php echo get_the_content(); ?>"><?php the tittle(); 
+<a href="<?php echo get_the_content(); ?>"><?php the_tittle(); 
 ?></a>
 </article>
