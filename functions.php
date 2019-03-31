@@ -71,6 +71,8 @@ function ourWidgetsInit() {
     register_sidebar( array(
         'name' => 'Footer Area 1',
         'id' => 'footer1'
+        'before_widget' => '<div class="widget-item">',
+        'after_widget' => '</div>'
         ));
 
         register_sidebar( array(
