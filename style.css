@@ -137,6 +137,18 @@ padding: 0;
     color: #FFF;
 }
 
+/* Main Column */
+.main-column {
+    width: 66%;
+    float: left;
+}
+
+/* Side Column */
+.secondary-column {
+    width: 30%;
+    float: right;
+}
+
 /*Footer Menu */
 .site-footer nav ul li {
     margin-right: 10px;
