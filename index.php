@@ -1,8 +1,11 @@
 <?php
 
-get_header();
+get_header(); ?>
 
-if (have_posts()) :
+<!-- main-column --> 
+<div class="main-column">
+
+<?php if (have_posts()) :
     while (have_posts()) : the_post(); 
 
     get_template_part('content', get_post_format());
@@ -12,8 +15,16 @@ if (have_posts()) :
 
 else:
     echo "";
-endif;
+endif; ?>
+
+</div><!-- /main-column --> 
+
+<!-- secondary-column -->
+<div class="secondary-column">
+     <p>This is the sidebar. </p>
+</div><!--/secondary-column --> 
 
 
-get_footer();
+
+<?php get_footer();
 ?>
