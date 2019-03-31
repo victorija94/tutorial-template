@@ -2,6 +2,9 @@
 
 get_header(); ?>
 
+<!-- side-content --> 
+<div class="site-content clearfix">
+
 <!-- main-column --> 
 <div class="main-column">
 
@@ -23,6 +26,9 @@ endif; ?>
 <div class="secondary-column">
      <p>This is the sidebar. </p>
 </div><!--/secondary-column --> 
+
+
+</div><!-- /site-content --> 
 
 
 
