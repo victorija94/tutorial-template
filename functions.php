@@ -73,6 +73,8 @@ function ourWidgetsInit() {
         'id' => 'footer1'
         'before_widget' => '<div class="widget-item">',
         'after_widget' => '</div>'
+        'before_title' => '<h4 class="my-special-class">',
+        'after_title' => '</h4>'
         ));
 
         register_sidebar( array(
