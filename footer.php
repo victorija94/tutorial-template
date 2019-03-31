@@ -1,7 +1,7 @@
 <footer class="site-footer">
 
 <!-- footer-widgets --> 
-<div class="footer-widgets">
+<div class="footer-widgets clearfix">
 
 <?php if (is_active_sidebar('footer1')); ?>
     <div class="footer-widget-area">
