@@ -1,7 +1,15 @@
 <footer class="site-footer">
 
+<!-- footer-widgets --> 
+div class="footer-widgets">
+
+<?php dynamic_sidebar('footer1'); ?>
+
+</div><!-- /footer-widgets --> 
+
 <nav class="site-nav">
   <?php
+
 $args = array(
   'theme_location' => 'footer');
 
