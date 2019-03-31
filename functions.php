@@ -58,3 +58,16 @@ register_nav_menus(array(
 }
 
 add_action('after_setup_theme' , 'learningWordPress_setup');
+
+
+// Add Our Widget Locations 
+function ourWidgetsInit() {
+
+    register_sidebar( array(
+    'name' => 'Sidebar',
+    'id' => 'sidebar1'
+    ));
+
+}
+
+add_action('widgets_init', 'ourWidgetsInit');
