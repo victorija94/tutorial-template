@@ -68,6 +68,11 @@ function ourWidgetsInit() {
     'id' => 'sidebar1'
     ));
 
+    register_sidebar( array(
+        'name' => 'Footer Area 1',
+        'id' => 'footer1'
+        ));
+
 }
 
 add_action('widgets_init', 'ourWidgetsInit');
