@@ -24,7 +24,7 @@ endif; ?>
 
 <!-- secondary-column -->
 <div class="secondary-column">
-     <p>This is the sidebar. </p>
+     <?php dynamic_sidebar('sidebar1') ?>
 </div><!--/secondary-column --> 
 
 
