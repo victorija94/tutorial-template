@@ -149,6 +149,14 @@ padding: 0;
     float: right;
 }
 
+/* Footer Widget Area */
+.footer-widget-area {
+    width: 25%;
+    float: left;
+    padding-right: 40px;
+    box-sizing: border-box;
+}
+
 /*Footer Menu */
 .site-footer nav ul li {
     margin-right: 10px;
