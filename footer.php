@@ -1,7 +1,7 @@
 <footer class="site-footer">
 
 <!-- footer-widgets --> 
-div class="footer-widgets">
+<div class="footer-widgets">
 
 <?php dynamic_sidebar('footer1'); ?>
 
