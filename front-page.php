@@ -27,6 +27,7 @@
             while ($opinionPosts->have_posts()) :
                 $opinionPosts->the_post(); ?>
                 <h2><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
+           <?php the_excerpt(); ?>
             <?php endwhile;
 
         else:
@@ -44,7 +45,8 @@
 
             while ($newsPosts->have_posts()) : $newsPosts->the_post(); 
             ?>
-                <h2><?php the_title(); ?></h2>
+<h2><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
+           <?php the_excerpt(); ?>
             <?php endwhile;
 
         else:
