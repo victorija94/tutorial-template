@@ -5,6 +5,7 @@ get_header(); ?>
 <!-- site-content -->
 <div class="site-content clearfix">
 
+  <h3>Custom HTML Here!</h3>
 
    <?php if (have_posts()) :
    while (have_posts()) : the_post();
@@ -19,7 +20,7 @@ else:
 endif;
 ?>
 
-
+<h3>Custom HTML Here!</h3>
 
 
 </div><!-- /site-content -->
