@@ -12,9 +12,14 @@
             endwhile;
         else:
             echo '<p>No content found</p>';
-        endif;
+        endif; ?>
 
-        // opinion posts loop begins here
+        <!--home-columns -->
+        <div class="home-columns clearfix">
+
+        <!--one-half -->
+        <div class ="one-half">
+        <?php // opinion posts loop begins here
         $opinionPosts = new WP_Query('cat=5&posts_per_page=2');
 
         if ($opinionPosts->have_posts()) :
@@ -27,9 +32,12 @@
         else:
             // fallback no content message here
         endif;
-        wp_reset_postdata();
+        wp_reset_postdata(); ?>
+        </div><!-- /one-half -->
 
-        // news posts loop begins here
+        <!--one-half -->
+        <div class="one-half last">
+        <?php // news posts loop begins here
         $newsPosts = new WP_Query('cat=18&posts_per_page=2');
 
         if ($newsPosts->have_posts()) :
@@ -45,6 +53,10 @@
         wp_reset_postdata();
 
         ?>
+
+</div><!-- /one-half -->
+        </div><!--/home-columns -->
+
 
     </div><!-- /site-content -->
 
