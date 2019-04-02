@@ -10,10 +10,8 @@
                 the_content();
 
             endwhile;
-
         else:
             echo '<p>No content found</p>';
-
         endif;
 
         // opinion posts loop begins here
@@ -29,6 +27,7 @@
         else:
             // fallback no content message here
         endif;
+        wp_reset_postdata();
 
         ?>
 
