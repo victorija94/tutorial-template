@@ -1,7 +1,4 @@
-<?php
-
-get_header(); ?>
-
+<?php get_header(); ?>
     <!-- site-content -->
     <div class="site-content clearfix">
 
@@ -20,7 +17,7 @@ get_header(); ?>
         endif;
 
         // opinion posts loop begins here
-        $opinionposts = new WP_Query('cat=5');
+        $opinionPosts = new WP_Query('cat=5');
 
         if ($opinionPosts->have_posts()) :
 
@@ -37,6 +34,4 @@ get_header(); ?>
 
     </div><!-- /site-content -->
 
-<?php get_footer();
-
-?>
+<?php get_footer(); ?>
