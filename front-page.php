@@ -15,7 +15,7 @@
         endif;
 
         // opinion posts loop begins here
-        $opinionPosts = new WP_Query('cat=5&posts_per_page=2');
+        $opinionPosts = new WP_Query('cat=5&posts_per_page=2&orderby=title');
 
         if ($opinionPosts->have_posts()) :
 
