@@ -18,12 +18,36 @@ else:
     echo '<p>No content found</p>';
 
 endif;
+
+// opinion posts loop begins here
+$opinion
+posts = new WP_Query('cat=7');
+
+if($opinionPosts->have_posts()) : 
+
+    while ($opinionPosts->have_posts()) : 
+        $opinionPosts->the_post(); ?>
+<h2><?php the_title(); ?></h2>
+<?php endwhile;
+
+else:
+    // fallback no content message here
+endif;
+
 ?>
 
-<h3>Custom HTML Here!</h3>
+</div><!-- /site-content --> 
+
+<?php get_footer();
+
+?>
 
 
-</div><!-- /site-content -->
+
+
+
+
+
 
 <?php get_footer();
 
