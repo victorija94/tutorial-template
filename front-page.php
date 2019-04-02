@@ -17,17 +17,23 @@
         endif;
 
         // opinion posts loop begins here
-        $opinionPosts = new WP_Query('cat=5');
+        $opinionposts = new WP_Query('cat=5');
 
         if ($opinionPosts->have_posts()) :
 
-// opinion posts loop begins here
-$opinionPosts = new WP_Query('cat=5');
+            while ($opinionPosts->have_posts()) :
+                $opinionPosts->the_post(); ?>
+                <h2><?php the_title(); ?></h2>
+            <?php endwhile;
 
-if ($opinionPosts->have_posts()) : 
+        else:
+            // fallback no content message here
+        endif;
 
         ?>
 
     </div><!-- /site-content -->
 
-<?php get_footer(); ?>
+<?php get_footer();
+
+?>
