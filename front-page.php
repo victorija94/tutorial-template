@@ -2,51 +2,40 @@
 
 get_header(); ?>
 
-<!-- site-content -->
-<div class="site-content clearfix">
+    <!-- site-content -->
+    <div class="site-content clearfix">
 
-  <h3>Custom HTML Here!</h3>
+        <h3>Custom HTML Here!</h3>
 
-   <?php if (have_posts()) :
-   while (have_posts()) : the_post();
+        <?php if (have_posts()) :
+            while (have_posts()) : the_post();
 
-the_content();
+                the_content();
 
-   endwhile;
+            endwhile;
 
-else:
-    echo '<p>No content found</p>';
+        else:
+            echo '<p>No content found</p>';
 
-endif;
+        endif;
 
-// opinion posts loop begins here
-$opinionposts = new WP_Query('cat=5');
+        // opinion posts loop begins here
+        $opinionposts = new WP_Query('cat=5');
 
-if($opinionPosts->have_posts()) : 
+        if ($opinionPosts->have_posts()) :
 
-    while ($opinionPosts->have_posts()) : 
-        $opinionPosts->the_post(); ?>
-<h2><?php the_title(); ?></h2>
-<?php endwhile;
+            while ($opinionPosts->have_posts()) :
+                $opinionPosts->the_post(); ?>
+                <h2><?php the_title(); ?></h2>
+            <?php endwhile;
 
-else:
-    // fallback no content message here
-endif;
+        else:
+            // fallback no content message here
+        endif;
 
-?>
+        ?>
 
-</div><!-- /site-content --> 
-
-<?php get_footer();
-
-?>
-
-
-
-
-
-
-
+    </div><!-- /site-content -->
 
 <?php get_footer();
 
