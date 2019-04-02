@@ -15,12 +15,27 @@
         endif;
 
         // opinion posts loop begins here
-        $opinionPosts = new WP_Query('cat=5&posts_per_page=2&orderby=title&order=ASC');
+        $opinionPosts = new WP_Query('cat=5&posts_per_page=2');
 
         if ($opinionPosts->have_posts()) :
 
             while ($opinionPosts->have_posts()) :
                 $opinionPosts->the_post(); ?>
+                <h2><?php the_title(); ?></h2>
+            <?php endwhile;
+
+        else:
+            // fallback no content message here
+        endif;
+        wp_reset_postdata();
+
+        // news posts loop begins here
+        $newsPosts = new WP_Query('cat=18&posts_per_page=2');
+
+        if ($newsPosts->have_posts()) :
+
+            while ($newsPosts->have_posts()) : $newsPosts->the_post(); 
+            ?>
                 <h2><?php the_title(); ?></h2>
             <?php endwhile;
 
