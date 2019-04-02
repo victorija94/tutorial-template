@@ -20,7 +20,7 @@ else:
 endif;
 
 // opinion posts loop begins here
-$opinionposts = new WP_Query('cat=7');
+$opinionposts = new WP_Query('cat=16');
 
 if($opinionPosts->have_posts()) : 
 
