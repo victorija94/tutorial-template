@@ -138,6 +138,10 @@ padding: 0;
 }
 
 /* Post Columns */
+.home-columns {
+    padding-top: 30px;
+}
+
 .one-half {
     width: 45%;
     float: left;
@@ -147,9 +151,6 @@ padding: 0;
 .last {
     margin-right: 0;
 }
-
-
-
 
 
 
