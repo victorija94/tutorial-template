@@ -1,47 +1,30 @@
 <?php
 
-get_header();
+get_header(); ?>
 
-if(have_posts()) :
-    while (have_posts()) : the_post(); ?>
+<!-- site-content -->
+<div class="site-content clearfix">
 
-    <article class="post page ">
+<!-- main-column -->
+<div class="main-column">
+   <?php if (have_posts()) :
+   while (have_posts()) : the_post();
 
-    <?php
+   get_template_part('content', 'page');
 
-    if( has_children() OR $_post->post_parent > 0 ){ ?>
+   endwhile;
 
-    <nav class="site-nav children-links clearfix">
+else:
+    echo '<p>No content found</p>';
 
-    <span class="parent-link"><a href="<?php echo get_the_permalink(get_top_ancestor_id()); ?>"><?php echo get_the_title(get_top_ancestor_id()); ?></a></span>
+endif;
+?>
+</div><!-- /main-column --> 
 
-<ul>
+<?php get_sidebar(); ?>
 
-        <?php
+</div><!-- /site-content -->
 
-        $args = array(
-        'child_of' => get_top_ancestor_id(),
-        'title_li' => ''
-       );
+<?php get_footer();
 
-   
-      ?>
-
-      <?php wp_list_pages( $args ); ?>
-    </ul>
-    </nav>
-
-    <?php } ?>
-
-       <h2><?php the_title(); ?></h2>
-       <?php the_content(); ?>
-    </article>
-    <?php endwhile;
-
-    else:
-        echo "";
-    endif;
-
-
-    get_footer();
 ?>
