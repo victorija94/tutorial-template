@@ -137,6 +137,22 @@ padding: 0;
     color: #FFF;
 }
 
+/* Post Columns */
+.one-half {
+    width: 45%;
+    float: left;
+    margin-right: 10%;
+}
+
+.last {
+    margin-right: 0;
+}
+
+
+
+
+
+
 /* Main Column */
 .main-column {
     width: 66%;
