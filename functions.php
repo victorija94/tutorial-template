@@ -95,3 +95,15 @@ function ourWidgetsInit() {
 }
 
 add_action('widgets_init', 'ourWidgetsInit');
+
+
+// Customize Appearance Options
+function learningWordPress_customize_register( $wp_customize ) {
+
+    $wp_customize->add_setting('lwp_link_color', array(
+
+    ));
+
+}
+
+add_action('customize_register', 'learningWordPress_customize_register');

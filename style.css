@@ -7,10 +7,18 @@ Version: 1.0
 License: GNU General Public License v2 or later
 */
 
+html {
+    padding: 0;
+    margin: 0;
+}
+
 body{
+    padding: 0;
+    margin: 0;
     font-family: arial, sans-serif;
     font-size: 14px;
     color: #333 
+    background-color #FFF;
 }
 
 a:link,
