@@ -105,6 +105,11 @@ function learningWordPress_customize_register( $wp_customize ) {
      'transport' => 'refresh',
     ));
 
+    $wp_customize->add_setting('lwp_btn_color', array(
+        'default' => '#006ec3',
+        'transport' => 'refresh',
+       ));
+
     $wp_customize->add_section('lwp_standard_colors', array(
       'title' => __('Standard Colors', 'LearningWordPress'),
       'priority' => 30,
@@ -115,6 +120,12 @@ function learningWordPress_customize_register( $wp_customize ) {
   'section' => 'lwp_standard_colors',
   'settings' => 'lwp_link_color',
     ) ) );
+
+    $wp_customize->add_control( new WP_Customize_Color_Control( $wp_customize, 'lwp_btn_color_control', array(
+        'label' =>__('Button Color', 'LearningWordPress'),
+        'section' => 'lwp_standard_colors',
+        'settings' => 'lwp_btn_color',
+          ) ) );
 }
 
 add_action('customize_register', 'learningWordPress_customize_register');
