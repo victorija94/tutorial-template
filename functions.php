@@ -118,3 +118,21 @@ function learningWordPress_customize_register( $wp_customize ) {
 }
 
 add_action('customize_register', 'learningWordPress_customize_register');
+
+
+// Output Customize CSS
+function learningWordPress_customize_css() { ?>
+
+<style type="text/css">
+
+a:link,
+a:visited {
+     color: <?php echo get_theme_mod('lwp_link_color'); ?>;
+
+}
+
+</style>
+
+<?php }
+
+add_action('wp_head', 'learningWordPress_customize_css');
