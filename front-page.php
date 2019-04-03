@@ -7,7 +7,8 @@
         <?php if (have_posts()) :
             while (have_posts()) : the_post();
 
-                the_content();
+get_template_part('content', get_post_format());
+        
 
             endwhile;
         else:
@@ -39,7 +40,7 @@
         <!--one-half -->
         <div class="one-half last">
         <?php // news posts loop begins here
-        $newsPosts = new WP_Query('cat=18&posts_per_page=2');
+        $newsPosts = new WP_Query('cat=10&posts_per_page=2');
 
         if ($newsPosts->have_posts()) :
 
