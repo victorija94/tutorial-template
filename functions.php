@@ -127,9 +127,15 @@ function learningWordPress_customize_css() { ?>
 
 a:link,
 a:visited {
-     color: <?php echo get_theme_mod('lwp_link_color'); ?>;
+     color: <?php echo get_theme_mod('lwr_link_color');  ?>;
 
 }
+
+.site-header nav ul li.current-menu-item a:link,
+ .site-header nav ul li.current-menu-item a:visited,
+ .site-header nav ul li.current-page-ancestor a:link, 
+ .site-header nav ul li.current-page-ancestor a:visited 
+background-color:<?php echo get_theme_mod('lwr_link_color'); ?>;
 
 </style>
 
