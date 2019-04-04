@@ -151,7 +151,8 @@ background-color:<?php echo get_theme_mod('lwp_link_color'); ?>;
 
 .btn-a,
 .btn-a:link,
-.btn-a:visited {
+.btn-a:visited,
+div.hd-search #searchsubmit {
     background-color:<?php echo get_theme_mod('lwp_btn_color'); ?>;
 
 }
