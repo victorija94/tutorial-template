@@ -147,6 +147,14 @@ a:visited {
  .site-header nav ul li.current-page-ancestor a:link, 
  .site-header nav ul li.current-page-ancestor a:visited 
 background-color:<?php echo get_theme_mod('lwp_link_color'); ?>;
+}
+
+.btn-a,
+.btn-a:link,
+.btn-a:visited {
+    background-color:<?php echo get_theme_mod('lwp_btn_color'); ?>;
+
+}
 
 </style>
 
