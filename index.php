@@ -2,6 +2,10 @@
 
 get_header(); ?>
 
+<body>
+<a href="http://www./auto.viesa.tech.com"><button>Buttons aren't toys!</button></a>
+</body>
+
 <!-- side-content --> 
 <div class="site-content clearfix">
 
