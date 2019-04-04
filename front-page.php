@@ -27,8 +27,12 @@ get_template_part('content', get_post_format());
 
             while ($opinionPosts->have_posts()) :
                 $opinionPosts->the_post(); ?>
-
-<? get_template_part('content', get_post_format());
+                <h2><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
+           <?php the_excerpt(); ?>
+           
+           <a href="<?php the_permalink(); ?>"><button>Read more&raquo;</button></a>
+     
+        
             <?php endwhile;
 
         else:
