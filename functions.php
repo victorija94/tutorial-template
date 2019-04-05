@@ -9,8 +9,8 @@ function learningWordPress_resources(){
     wp_enqueue_style( 'stylesheet', get_template_directory_uri() . '/css/skel-noscript.css');
     wp_enqueue_style( 'stylesheet', get_template_directory_uri() . '/css/style.css');
     wp_enqueue_style( 'stylesheet', get_template_directory_uri() . '/css/style-desktop.css');
-   // wp_enqueue_style( 'stylesheet', get_template_directory_uri() . '/css/style-1000px.css');
-   // wp_enqueue_style( 'stylesheet', get_template_directory_uri() . '/css/style-mobile.css');
+    wp_enqueue_style( 'stylesheet', get_template_directory_uri() . '/css/style-1000px.css');
+    wp_enqueue_style( 'stylesheet', get_template_directory_uri() . '/css/style-mobile.css');
 }
 
 // Get top ancestor
