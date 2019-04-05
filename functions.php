@@ -5,7 +5,13 @@ add_action('wp_enqueue_scripts', 'learningWordPress_resources');
 
 
 function learningWordPress_resources(){
-    wp_enqueue_style('style', get_stylesheet_uri());
+    
+    wp_register_script( 'custom-script', get_template_directory_uri() . '/js/init.js');
+     wp_register_script( 'custom-script', get_template_directory_uri() . '/js/html5shiv.js');
+    wp_register_script( 'custom-script', get_template_directory_uri() . '/js/skel.min.js');
+    wp_register_script( 'custom-script', get_template_directory_uri() . '/js/skel-panels.min.js');
+    
+    wp_enqueue_style('stylesheet', get_stylesheet_uri());
     wp_enqueue_style( 'stylesheet', get_template_directory_uri() . '/css/skel-noscript.css');
     wp_enqueue_style( 'stylesheet', get_template_directory_uri() . '/css/style.css');
     wp_enqueue_style( 'stylesheet', get_template_directory_uri() . '/css/style-desktop.css');
