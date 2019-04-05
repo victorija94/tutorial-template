@@ -1,9 +1,5 @@
 <?php
 
-add_action('wp_enqueue_scripts', 'learningWordPress_resources');
-
-
-
 function learningWordPress_resources(){
     
     wp_register_script( 'custom-script', get_template_directory_uri() . '/js/init.js');
@@ -18,6 +14,8 @@ function learningWordPress_resources(){
     wp_enqueue_style( 'style', get_template_directory_uri() . '/css/style-1000px.css');
     wp_enqueue_style( 'style', get_template_directory_uri() . '/css/style-mobile.css');
 }
+
+add_action('wp_enqueue_scripts', 'learningWordPress_resources');
 
 // Get top ancestor
 function get_top_ancestor_id(){
