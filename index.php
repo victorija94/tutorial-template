@@ -1,5 +1,6 @@
 <?php get_header(); ?>
-<div id="main">
+		<!-- Main -->
+		<div id="main">
 			<div class="container">
 				<div class="row"> 
 					
