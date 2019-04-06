@@ -1,6 +1,7 @@
 <html>
     <head>
-        <title>Test</title>
+    <title><?php bloginfo('name'); ?></title>
+    <?php wp_head(); ?>
     </head>
 <body>
 <div id="output_width">
