@@ -170,4 +170,4 @@ div.hd-search #searchsubmit {
 
 <?php }
 
-add_action('wp_head', 'learningWordPress_customize_css');
+//add_action('wp_head', 'learningWordPress_customize_css');
