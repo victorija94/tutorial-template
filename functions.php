@@ -6,6 +6,13 @@ function learningWordPress_resources(){
     wp_enqueue_style( 'style-desktop', get_template_directory_uri() . '/css/style-desktop.css', array(), '1.0.0', 'all');
     wp_enqueue_style( 'style-1000px', get_template_directory_uri() . '/css/style-1000px.css', array(), '1.0.0', 'all');
     wp_enqueue_style( 'style-mobile', get_template_directory_uri() . '/css/style-mobile.css', array(), '1.0.0', 'all');
+    
+    wp_enqueue_script('jquery');
+    wp_enqueue_script('bootstrapjs', get_template_directory_uri() . '/js/init.js', array(), '1.0.0', 'true');
+    wp_enqueue_script('html5shiv', get_template_directory_uri() . '/js/html5shiv.js', array(), '1.0.0', 'true');
+    wp_enqueue_script('skel', get_template_directory_uri() . '/js/skel.min.js', array(), '1.0.0', 'true');
+    wp_enqueue_script('skel-panels', get_template_directory_uri() . '/js/skel-panels.min.js', array(), '1.0.0', 'true');
+
 }
 
 add_action('wp_enqueue_scripts', 'learningWordPress_resources', 999);
