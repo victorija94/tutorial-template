@@ -1,8 +1,8 @@
 <?php get_header(); ?>
-		<!-- Main -->
-		<div id="main">
+<div id="main">
 			<div class="container">
 				<div class="row"> 
+					
 					<!-- Content -->
 					<div id="content" class="8u skel-cell-important">
 						<section>
