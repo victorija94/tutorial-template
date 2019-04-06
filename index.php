@@ -8,7 +8,7 @@ if (have_posts()) :
 
 <?php endwhile;
 else :
-    echo '<p>Nocontent found</p>';
+    echo '<p>No content found</p>';
 endif;
 
 ?>
