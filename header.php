@@ -7,13 +7,6 @@
 <html>
 	<head>
 		 <title><?php bloginfo('name'); ?></title>
-		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
-		<meta name="description" content="" />
-		<meta name="keywords" content="" />
-		<link href='http://fonts.googleapis.com/css?family=Arimo:400,700' rel='stylesheet' type='text/css'>
-		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-			 <meta charset="<?php bloginfo('charset'); ?>">
-        <meta name="viewport" content="width=device-width">
 		<?php wp_head(); ?>
 	</head>
 	<body class="homepage">
