@@ -1,6 +1,8 @@
 <html>
 	<head>
 		 <title><?php bloginfo('name'); ?></title>
+		<link href='http://fonts.googleapis.com/css?family=Arimo:400,700' rel='stylesheet' type='text/css'>
+		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
 		<?php wp_head(); ?>
 	</head>
 	<body class="homepage">
