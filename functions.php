@@ -4,8 +4,8 @@ function learningWordPress_resources(){
     wp_enqueue_style( 'skel-noscript', get_template_directory_uri() . '/css/skel-noscript.css', array(), '1.0.0', 'all');
     wp_enqueue_style( 'style', get_template_directory_uri() . '/css/style.css', array(), '3.3.4', 'all');
     wp_enqueue_style( 'style-desktop', get_template_directory_uri() . '/css/style-desktop.css', array(), '1.0.0', 'all');
-    wp_enqueue_style( 'style-1000px', get_template_directory_uri() . '/css/style-1000px.css', array(), '1.0.0', 'all');
-    wp_enqueue_style( 'style-mobile', get_template_directory_uri() . '/css/style-mobile.css', array(), '1.0.0', 'all');
+    //wp_enqueue_style( 'style-1000px', get_template_directory_uri() . '/css/style-1000px.css', array(), '1.0.0', 'all');
+    //wp_enqueue_style( 'style-mobile', get_template_directory_uri() . '/css/style-mobile.css', array(), '1.0.0', 'all');
     
     wp_enqueue_script('skel', get_template_directory_uri() . '/js/skel.min.js', array(), '1.0.0', 'true');
     wp_enqueue_script('skel-panels', get_template_directory_uri() . '/js/skel-panels.min.js', array(), '1.0.0', 'true');
