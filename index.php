@@ -3,7 +3,6 @@
 		<div id="main">
 			<div class="container">
 				<div class="row"> 
-					HELP ME
 					<!-- Content -->
 					<div id="content" class="8u skel-cell-important">
 						<section>
