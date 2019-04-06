@@ -16,7 +16,7 @@ function learningWordPress_resources(){
     wp_register_style( 'style-mobile', get_template_directory_uri() . '/css/style-mobile.css');
 }
 
-add_action('wp_enqueue_scripts', 'learningWordPress_resources');
+add_action('wp_enqueue_scripts', 'learningWordPress_resources', 999);
 
 // Get top ancestor
 function get_top_ancestor_id(){
