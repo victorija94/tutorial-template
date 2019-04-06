@@ -9,12 +9,12 @@ function learningWordPress_resources(){
     
     wp_register_style('custom-styles123', get_stylesheet_uri());
 
-    wp_enqueue_style( 'custom-styles123', get_template_directory_uri() . '/css/skel-noscript.css');
-    wp_enqueue_style( 'custom-styles', get_template_directory_uri() . '/css/style.css');
-    wp_enqueue_style('custom-styles')
-    wp_enqueue_style( 'custom-styles123', get_template_directory_uri() . '/css/style-desktop.css');
-    wp_enqueue_style( 'custom-styles123', get_template_directory_uri() . '/css/style-1000px.css');
-    wp_enqueue_style( 'custom-styles123', get_template_directory_uri() . '/css/style-mobile.css');
+    wp_register_style( 'custom-styles123', get_template_directory_uri() . '/css/skel-noscript.css');
+    wp_register_style( 'custom-styles', get_template_directory_uri() . '/css/style.css');
+    wp_register_style('custom-styles')
+    wp_register_style( 'custom-styles123', get_template_directory_uri() . '/css/style-desktop.css');
+    wp_register_style( 'custom-styles123', get_template_directory_uri() . '/css/style-1000px.css');
+    wp_register_style( 'custom-styles123', get_template_directory_uri() . '/css/style-mobile.css');
 }
 
 add_action('wp_enqueue_scripts', 'learningWordPress_resources');
