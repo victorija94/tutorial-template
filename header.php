@@ -12,7 +12,11 @@
   <header class="main-header">
     <img id="logo" src="https://placeholder.com/wp-content/uploads/2018/10/placeholder.com-logo3.png" alt="Responsive Design" />
     <nav class="main-nav">
-     <?php wp_nav_menu(); ?>
+<?php
+    $args = array(
+  'theme_location' => 'primary');
+?>
+     <?php wp_nav_men($args); ?>
     </nav>
     <!--./main-nav-->
   </header>
