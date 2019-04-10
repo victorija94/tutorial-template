@@ -5,6 +5,7 @@
 	<meta charset="UTF-8">
 	<title>Food &amp; Recipes Web Template</title>
 	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<?php wp_head(); ?>
 </head>
 <body>
 	<div class="header">
