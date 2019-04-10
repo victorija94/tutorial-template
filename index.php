@@ -32,6 +32,12 @@
 	else:
 		echo "";
 	endif; ?>
+
+   </div><!-- /main-column --> 
+
+   <?php get_sidebar(); ?>
+
+   </div><!-- /site-content -->
 	
 	
 	<?php get_footer();
@@ -142,14 +148,7 @@
 					</li>
 				</ul>
 			</div>
-			<div>
-				<h3>Get Updates</h3>
-				<a href="http://freewebsitetemplates.com/go/facebook/" target="_blank" id="facebook">Facebook</a>
-				<a href="http://freewebsitetemplates.com/go/twitter/" target="_blank" id="twitter">Twitter</a>
-				<a href="http://freewebsitetemplates.com/go/youtube/" target="_blank" id="youtube">Youtube</a>
-				<a href="http://freewebsitetemplates.com/go/flickr/" target="_blank" id="flickr">Flickr</a>
-				<a href="http://freewebsitetemplates.com/go/googleplus/" target="_blank" id="googleplus">Google&#43;</a>
-			</div>
+			
 		</div>
 	</div>
 	<div class="footer">
