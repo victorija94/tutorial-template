@@ -1,6 +1,7 @@
 <?php
 
 function learningWordPress_setup() {
+    
     //Navigation Menus
 register_nav_menus(array(
     'primary' => __('Primary Menu'),

@@ -20,27 +20,23 @@
 	<div class="body">
 		<div>
 			<div class="header">
-				<ul>
-					<li class="current">
-						<a href="index.html">Home</a>
-					</li>
-					<li>
-						<a href="recipes.html">A to Z Recipes</a>
-					</li>
-					<li>
-						<a href="featured.html">Featured Recipes</a>
-					</li>
-					<li>
-						<a href="videos.html">Videos</a>
-					</li>
-					<li>
-						<a href="about.html">About</a>
-					</li>
-					<li>
-						<a href="blog.html">Blog</a>
-					</li>
-				</ul>
-			</div>
+				
+		<?php get_header(); ?>
+
+
+
+  <!-- side-content --> 
+ <div class="site-content clearfix">
+
+   <!-- main-column --> 
+   <div class="main-column">
+
+   <?php if (have_posts()) :
+    while (have_posts()) : the_post(); 
+    get_template_part('content', get_post_format());
+        
+	 endwhile;
+	 
 			<div class="body">
 				<div>
 					<a href="index.html"><img src="images/turkey.jpg" alt="Image"></a>
