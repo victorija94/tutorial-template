@@ -36,7 +36,20 @@
     get_template_part('content', get_post_format());
         
 	 endwhile;
-	 
+	else:
+		echo "";
+	endif; ?>
+	
+	</div><!-- /main-column --> 
+	
+	<?php get_sidebar(); ?>
+	
+	</div><!-- /site-content --> 
+	
+	
+	
+	<?php get_footer();
+	?>
 			<div class="body">
 				<div>
 					<a href="index.html"><img src="images/turkey.jpg" alt="Image"></a>
