@@ -40,123 +40,17 @@
    </div><!-- /site-content -->
 	
 	
-	<?php get_footer();
-	?>
+	   <?php get_footer();
+	     ?>
 			<div class="body">
-				<div>
-					<a href="index.html"><img src="images/turkey.jpg" alt="Image"></a>
-				</div>
-				<ul>
-					<li class="current">
-						<a href="blog.html"><img src="images/holi-turkey.jpg" alt="Image"></a>
-						<div>
-							<h2><a href="blog.html">Holy Turkey</a></h2>
-							<p>
-								This is just a place holder
-							</p>
-						</div>
-					</li>
-					<li>
-						<a href="blog.html"><img src="images/fruits-and-bread.jpg" alt="Image"></a>
-						<div>
-							<h2><a href="blog.html">Fruits &amp; Bread</a></h2>
-							<p>
-								This is just a place holder
-							</p>
-						</div>
-					</li>
-					<li>
-						<a href="blog.html"><img src="images/dessert.jpg" alt="Image"></a>
-						<div>
-							<h2><a href="blog.html">Dessert</a></h2>
-							<p>
-								This is just a place holder
-							</p>
-						</div>
-					</li>
-				</ul>
-			</div>
-			<div class="footer">
-				<ul>
-					<li>
-						<h2><a href="featured.html">Featured Recipes</a></h2>
-						<a href="featured.html"><img src="images/featured.jpg" alt="Image"></a>
-					</li>
-					<li>
-						<h2><a href="recipes.html">A to Z Recipes</a></h2>
-						<a href="recipes.html"><img src="images/a-z.jpg" alt="Image"></a>
-					</li>
-				</ul>
-				<ul>
-					<li>
-						<h2><a href="videos.html">Videos</a></h2>
-						<a href="videos.html"><img src="images/videos.jpg" alt="Image"></a>
-					</li>
-					<li>
-						<h2><a href="blog.html">Blog</a></h2>
-						<a href="blog.html"><img src="images/blog.jpg" alt="Image"></a>
-					</li>
-				</ul>
-			</div>
-		</div>
-		<div>
-			<div>
-				<h3>Cooking Video</h3>
-				<a href="videos.html"><img src="images/cooking-video.png" alt="Image"></a>
-				<span>Vegetable &amp; Rice Topping</span>
-			</div>
-			<div>
-				<h3>Featured Recipes</h3>
-				<ul id="featured">
-					<li>
-						<a href="recipes.html"><img src="images/sandwich.jpg" alt="Image"></a>
-						<div>
-							<h2><a href="recipes.html">Ham Sandwich</a></h2>
-							<span>by: Anna</span>
-						</div>
-					</li>
-					<li>
-						<a href="recipes.html"><img src="images/biscuit-and-coffee.jpg" alt="Image"></a>
-						<div>
-							<h2><a href="recipes.html">Biscuit &amp; Sandwich</a></h2>
-							<span>by: Sarah</span>
-						</div>
-					</li>
-					<li>
-						<a href="recipes.html"><img src="images/pizza.jpg" alt="Image"></a>
-						<div>
-							<h2><a href="recipes.html">Delicious Pizza</a></h2>
-							<span>by: Rico</span>
-						</div>
-					</li>
-				</ul>
-			</div>
-			<div>
-				<h3>Blog</h3>
-				<ul id="blog">
-					<li>
-						<a href="blog.html">This is just a place holder, so you can see what the site would look like.</a>
-						<span class="date">Jan 9, by Liza</span>
-					</li>
-					<li>
-						<a href="blog.html">This is just a place holder, so you can see what the site would look like.</a>
-						<span class="date">Feb 16, by Myk</span>
-					</li>
-					<li>
-						<a href="blog.html">This is just a place holder, so you can see what the site would look like.</a>
-						<span class="date">March 15, by Xaxan</span>
-					</li>
-				</ul>
-			</div>
+		
 			
-		</div>
-	</div>
-	<div class="footer">
-		<div>
-			<p>
-				&copy; Copyright 2012. All rights reserved
-			</p>
-		</div>
+					
+			<div class="footer">
+					
+	         </div>
+	  <div class="footer">
+			
 	</div>
 </body>
 </html>
