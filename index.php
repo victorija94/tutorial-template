@@ -33,13 +33,6 @@
 		echo "";
 	endif; ?>
 	
-	</div><!-- /main-column --> 
-	
-	<?php get_sidebar(); ?>
-	
-	</div><!-- /site-content --> 
-	
-	
 	
 	<?php get_footer();
 	?>
