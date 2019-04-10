@@ -1,17 +1,96 @@
 <?php
 
 function learningWordPress_setup() {
-    
+
     //Navigation Menus
 register_nav_menus(array(
     'primary' => __('Primary Menu'),
     'footer' => __('Footer Menu '),
 ));
+
+// Add featured image support
+add_theme_support('post-thumbnails');
+add_image_size('small-thumbnail', 180, 120, true );
+add_image_size('banner-image', 920, 210, array('left', 'top'));
+// Add post format support
+add_theme_support('post-formats', array('aside', 'gallery', 'link'));
 }
 add_action('after_setup_theme' , 'learningWordPress_setup');
-
-function res_blog_resources(){
-    wp_enqueue_style( 'style', get_template_directory_uri() . '/css/style.css', array(), '1.0.0', 'all');    
+// Add Our Widget Locations 
+function ourWidgetsInit() {
+register_sidebar( array(
+'name' => 'Sidebar',
+'id' => 'sidebar1'
+));
+register_sidebar( array(
+    'name' => 'Footer Area 1',
+    'id' => 'footer1',
+    'before_widget' => '<div class="widget-item">',
+    'after_widget' => '</div>',
+    'before_title' => '<h4 class="my-special-class">',
+    'after_title' => '</h4>'
+    ));
+    register_sidebar( array(
+        'name' => 'Footer Area 2',
+        'id' => 'footer2'
+    ));
+    register_sidebar( array(
+        'name' => 'Footer Area 3',
+        'id' => 'footer3'
+        ));
+        register_sidebar( array(
+            'name' => 'Footer Area 4',
+            'id' => 'footer4'
+            ));
 }
-add_action('wp_enqueue_scripts', 'res_blog_resources', 999);
-?>
+add_action('widgets_init', 'ourWidgetsInit');
+// Customize Appearance Options
+function learningWordPress_customize_register( $wp_customize ) {
+$wp_customize->add_setting('lwp_link_color', array(
+ 'default' => '#006ec3',
+ 'transport' => 'refresh',
+));
+$wp_customize->add_setting('lwp_btn_color', array(
+    'default' => '#006ec3',
+    'transport' => 'refresh',
+   ));
+$wp_customize->add_section('lwp_standard_colors', array(
+  'title' => __('Standard Colors', 'LearningWordPress'),
+  'priority' => 30,
+));
+$wp_customize->add_control( new WP_Customize_Color_Control( $wp_customize, 'lwp_link_color_control', array(
+'label' =>__('Link Color', 'LearningWordPress'),
+'section' => 'lwp_standard_colors',
+'settings' => 'lwp_link_color',
+) ) );
+$wp_customize->add_control( new WP_Customize_Color_Control( $wp_customize, 'lwp_btn_color_control', array(
+    'label' =>__('Button Color', 'LearningWordPress'),
+    'section' => 'lwp_standard_colors',
+    'settings' => 'lwp_btn_color',
+      ) ) );
+}
+add_action('customize_register', 'learningWordPress_customize_register');
+// Output Customize CSS
+function learningWordPress_customize_css() { ?>
+
+<style type="text/css">
+a:link,
+a:visited {
+ color: <?php echo get_theme_mod('lwp_link_color');  ?>;
+}
+.site-header nav ul li.current-menu-item a:link,
+.site-header nav ul li.current-menu-item a:visited,
+.site-header nav ul li.current-page-ancestor a:link, 
+.site-header nav ul li.current-page-ancestor a:visited 
+background-color:<?php echo get_theme_mod('lwp_link_color'); ?>;
+}
+.btn-a,
+.btn-a:link,
+.btn-a:visited,
+div.hd-search #searchsubmit {
+background-color:<?php echo get_theme_mod('lwp_btn_color'); ?>;
+}
+</style>
+
+<?php }
+add_action('wp_head', 'learningWordPress_customize_css');
